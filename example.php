@@ -1,11 +1,10 @@
-# PHP API Client for [VR Cleaning](https://www.vrcleaning.net)
+<?php
+/******************************************************************************
+Example for the PHP API client for VR Cleaning, https://www.vrcleaning.net
+Licensed under the BSD 3-Clause License, see included LICENSE file for details.
+Copyright (c) 2023 VR Cleaning, LLC. All Rights Reserved.
+******************************************************************************/
 
-An easy to use PHP Client, the only extensions you need in your PHP are cURL and JSON.
-
-You can find our full API documentation at https://www.vrcleaning.net/apidoc
-
-Example usage: (more in example.php)
-```
 require('vrcleaning.api.client.php');
 
 $c = new VRCleaningAPI('pub_...', 'priv_...');
@@ -28,4 +27,3 @@ if ($reply['success']) {
 } else {
 	die("Error creating business: ".$reply['error']."\n");
 }
-```
